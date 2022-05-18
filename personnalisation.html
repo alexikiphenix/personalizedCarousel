@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200;400&display=swap" rel="stylesheet">      
+    <link rel="stylesheet" href="assets/css/style.css" />
+<title>Grid - js</title>
+</head>
+<body>
+    <header id="mainHeader">
+        <div class="logo">
+            <a href="index.html"><i class="fas fa-home"></i>
+                LOGO
+            </a>
+        </div>
+        <div class="header-center">
+            <form action="" method="POST">
+                <div class="search-box">
+                    <input class="main-search" type="search" id="recherche" name="recherche" list="glossaire">
+                    <datalist id="glossaire">
+                        <option value="1-mot-1" label="Mot 1">Mot 1</option> <!-- Il est possible de masquer la valeur envoyée lors du choix -->
+                        <option value="2-mot-2" label="Mot 2">Mot 2</option>
+                        <option value="3-mot-3" label="Mot 3">Mot 3</option>
+                        <option value="4-mot-4" label="Mot 4">Mot 4</option>
+                        <option value="5-mot-5" label="Mot 5">Mot 5</option>
+                    </datalist>
+                    <button class="mymagnifier" type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                
+            </form>
+                <h1>Personnalisation</h1>
+                <nav class="menu-principal">
+                    <a href="index.html">Accueil</a>
+                    <a href="apropos.html">A propos</a>                    
+                    <a href="glossaire.html">Glossaire</a>
+                    <a href="personnalisation.html">Personnalisation</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+        </div>
+        <nav class="connexion">
+            <ul>
+                <li>
+                    <i class="fas fa-user"></i>Connexion
+                    <ul class="hidden-ul">
+                        <li>
+                            <a href="">s'inscrire</a> 
+                        </li>
+                        <li>
+                            <a href="">se connecter</a> 
+                        </li>
+                    </ul>
+                </li>
+            </ul>                      
+        </nav>
+    </header>
+    <main>
+        <div class="textCenter">
+            <h2>Choisir les images pour le carrousel de la bannière</h2>
+        </div>        
+        <div id="backgroundsList">       
+        </div>
+        <div class="textCenter">
+            <button id="btnValidateListImg">
+                Valider ma sélection
+            </button>
+        </div>
+    </main>
+    
+
+<script src="assets/js/carouselSettings.js"></script>
+</body>
+</html>
